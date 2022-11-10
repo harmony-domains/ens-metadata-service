@@ -3,6 +3,7 @@ import { rasterize } from '../service/rasterize';
 
 /* istanbul ignore next */
 export async function ensRasterize(req: Request, res: Response) {
+  console.log(`In ENS NFT image rasterization`)
   // #swagger.description = 'ENS NFT image rasterization'
   // #swagger.parameters['networkName'] = { schema: { $ref: '#/definitions/networkName' } }
   // #swagger.parameters['{}'] = { name: 'contractAddress', description: 'Contract address which stores the NFT indicated by the tokenId', schema: { $ref: '#/definitions/contractAddress' } }

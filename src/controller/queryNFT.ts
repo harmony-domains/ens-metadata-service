@@ -3,6 +3,7 @@ import { queryNFT } from '../service/queryNFT';
 
 /* istanbul ignore next */
 export async function queryNFTep(req: Request, res: Response) {
+  console.log('In Query endpoint for NFT URIs ')
   // #swagger.description = 'Query endpoint for NFT URIs'
   // #swagger.parameters['uri'] = { in: 'query', description: 'NFT URI as defined under CAIP-22 for erc721 assets and CAIP-29 for erc1155 assets.' }
   const { uri } = req.query;

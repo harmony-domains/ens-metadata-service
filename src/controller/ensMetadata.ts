@@ -20,6 +20,7 @@ import getNetwork from '../service/network';
 import { constructEthNameHash } from '../utils/namehash';
 
 export async function ensMetadata(req: Request, res: Response) {
+  console.log('In ENS NFT metadata')
   // #swagger.description = 'ENS NFT metadata'
   // #swagger.parameters['networkName'] = { schema: { $ref: '#/definitions/networkName' } }
   // #swagger.parameters['{}'] = { name: 'contractAddress', description: 'Contract address which stores the NFT indicated by the tokenId', schema: { $ref: '#/definitions/contractAddress' } }

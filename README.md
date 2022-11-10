@@ -66,7 +66,7 @@ More info and list of all endpoints: https://metadata.ens.domains/docs
 ```
 git clone https://github.com/ensdomains/ens-metadata-service.git
 cd ens-metadata-service
-cp .env.org .env // Fill in Vars
+cp .env.example .env // Fill in Vars
 yarn
 yarn dev
 ```
@@ -94,13 +94,13 @@ yarn test:cov
 
 ## Environment Variables
 
-| Name | Description | Default value | Options |
-| ---- | ----------- | ------------- | ------- |
-| HOST | Host (ip/domain) address of the running service | localhost | - | No |
-| ENV | Project scope | local | local/prod |
-| INAMEWRAPPER | InterfaceId of NameWrapper Contract | 0xe89c48dc | - |
-| ADDRESS_ETH_REGISTRAR | Ethereum address of ENSBaseRegistrar Contract | 0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85 | - |
-| ADDRESS_NAME_WRAPPER | Ethereum address of NameWrapper Contract | 0x582224b8d4534F4749EFA4f22eF7241E0C56D4B8 | - |
+| Name                  | Description                                     | Default value                              | Options    |
+| --------------------- | ----------------------------------------------- | ------------------------------------------ | ---------- |
+| HOST                  | Host (ip/domain) address of the running service | localhost                                  | -          | No |
+| ENV                   | Project scope                                   | local                                      | local/prod |
+| INAMEWRAPPER          | InterfaceId of NameWrapper Contract             | 0xe89c48dc                                 | -          |
+| ADDRESS_ETH_REGISTRAR | Ethereum address of ENSBaseRegistrar Contract   | 0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85 | -          |
+| ADDRESS_NAME_WRAPPER  | Ethereum address of NameWrapper Contract        | 0x582224b8d4534F4749EFA4f22eF7241E0C56D4B8 | -          |
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

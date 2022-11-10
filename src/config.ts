@@ -20,6 +20,7 @@ const ADDRESS_NAME_WRAPPER = process.env.ADDRESS_NAME_WRAPPER || '0x582224b8d453
 const SERVER_URL =
   ENV === 'local' ? `http://localhost:${PORT}` : `https://${HOST}`;
 
+const LOCAL_NETWORK = process.env.LOCAL_NETWORK || 'http://localhost:8545'
 const ETH_REGISTRY_ABI = [
   'function recordExists(bytes32 node) external view returns (bool)'
 ];
@@ -39,4 +40,5 @@ export {
   INFURA_API_KEY,
   RESPONSE_TIMEOUT,
   SERVER_URL,
+  LOCAL_NETWORK,
 };

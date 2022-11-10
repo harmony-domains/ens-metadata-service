@@ -13,6 +13,7 @@ import { getAvatarImage } from '../service/avatar';
 import getNetwork from '../service/network';
 
 export async function avatarImage(req: Request, res: Response) {
+  console.log('In ENS avatar image')
   // #swagger.description = 'ENS avatar image'
   // #swagger.parameters['networkName'] = { schema: { $ref: '#/definitions/networkName' } }
   // #swagger.parameters['name'] = { description: 'ENS name', schema: { $ref: '#/definitions/ensName' } }

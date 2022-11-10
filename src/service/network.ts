@@ -14,6 +14,7 @@ const NETWORK = {
   GOERLI: 'goerli',
   MAINNET: 'mainnet',
 };
+import {LOCAL_NETWORK} from '../config';
 
 function getWeb3URL(api: string, network: string) {
   switch(api) {
@@ -34,7 +35,7 @@ export default function getNetwork(network: string): any {
   switch (network) {
     case NETWORK.LOCAL:
       SUBGRAPH_URL = 'http://127.0.0.1:8000/subgraphs/name/graphprotocol/ens';
-      WEB3_URL = getWeb3URL(WEB3_URL, NETWORK.RINKEBY);
+      WEB3_URL = LOCAL_NETWORK;
       break;
     case NETWORK.RINKEBY:
       SUBGRAPH_URL =
@@ -59,5 +60,7 @@ export default function getNetwork(network: string): any {
       throw new UnsupportedNetwork(`Unknown network '${network}'`, 400);
   }
   const provider = new ethers.providers.StaticJsonRpcProvider(WEB3_URL);
+  console.log(`WEB3_URL: ${WEB3_URL}`)
+  console.log(`SUBGRAPH_URL: ${SUBGRAPH_URL}`)
   return { WEB3_URL, SUBGRAPH_URL, provider };
 }
