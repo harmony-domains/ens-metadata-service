@@ -64,7 +64,7 @@ More info and list of all endpoints: https://metadata.ens.domains/docs
 ## How to setup
 
 ```
-git clone https://github.com/ensdomains/ens-metadata-service.git
+git clone https://github.com/harmony-domains/ens-metadata-service.git
 cd ens-metadata-service
 cp .env.example .env // Fill in Vars
 yarn
